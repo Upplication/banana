@@ -1,4 +1,5 @@
 .all-bananas
+    h1.title Banana time!!!
     .filters
         input.filter.by-day(ng-model="search.day", placeholder="Filter by day")
         input.filter.by-author(ng-model="search.author", placeholder="Filter by author")
@@ -6,8 +7,8 @@
     ul
         li.banana(ng-repeat="banana in bananas | filter:search")
             a(ng-href="#/banana/{{banana.day}}")
-                h1.day {{banana.day}}
-                h2.author {{banana.author}}
+                h2.day {{banana.day}}
+                h3.author {{banana.author}}
                 .order
                     |{{banana.order}}º
                 .tags(ng-if="banana.tags")

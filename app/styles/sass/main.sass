@@ -21,6 +21,8 @@ button:focus,
 select:focus
   outline: 0
 
+////////// MIXINS
+
 
 //////// STYLES
 body
@@ -35,6 +37,8 @@ body
   & + .tag
     margin-left: .3em
 
+
+//////// ONE-BANANA PAGE
 .one-banana
   .info
     width: 100%
@@ -60,7 +64,9 @@ body
     position: absolute
     top: 1.8em
     right: 5em
-
+  &.latest
+    .tags
+      display: none
 
 .go-to-previous,
 .go-to-next,
@@ -113,6 +119,14 @@ body
       color: rgba(237,115,221,.95)
 
 
+//////// ALL-BANANAS PAGE
+.title
+  position: absolute
+  right: 1em
+  top: .5em
+  font-size: 3em
+  font-weight: 300
+
 .filters
   margin: 2em
 
@@ -122,6 +136,17 @@ body
   line-height: 2em
   margin-bottom: 2em
   +border-radius(3px)
+
+@-moz-keyframes loopOpacity
+  0%
+    opacity: .4
+  100%
+    opacity: 1
+@-webkit-keyframes loopOpacity
+  0%
+    opacity: .4
+  100%
+    opacity: 1
 
 .banana
   display: inline-block
@@ -133,10 +158,17 @@ body
   padding: 1em
   margin: 2%
   color: black
+  &:last-child
+    animation: loopOpacity .5s
+    -moz-animation: loopOpacity .5s infinite
+    -webkit-animation: loopOpacity .5s infinite
+
   &:hover
     opacity: 1
     +transition-property(opacity)
     +transition-duration(.3s)
+  a
+    display: block
   .tags
     margin-top: 1em
     pointer-events: none
