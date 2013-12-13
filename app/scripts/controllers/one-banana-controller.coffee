@@ -6,15 +6,11 @@ angular.module('bananaUpp')
 
     requestedBanana = $routeParams.day
 
-    _serveBanana = (banana, last) ->
+    _serveBanana = (banana, latest) ->
       if banana
 
         banana.url = bananasService.getBasePath() + '/' + banana.day + '/' + banana.index
-        banana.last = last
-
-        if last
-          banana.tags = undefined
-
+        banana.latest = latest
         $scope.banana = banana
 
       else
