@@ -2,6 +2,15 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20131213,
+			"author": "@hhkaos",
+			"index": "banana.html",
+			"tags":[
+				"youtube",
+				"famous"
+			]
+
+		},{
 			"day": 20131212,
 			"author": "@hhkaos",
 			"index": "banana.html",
