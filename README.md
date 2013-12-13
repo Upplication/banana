@@ -57,7 +57,7 @@ Configuration of available bananas
 	* bananas {Array}
 		* day: {number} day of the banana
 		* author: {String} name of the author of the banana
-		* index: {String} name of the html, located at the folder 'bananas' and subfolder '{DAY}' where DAY is the previous parameter
+		* index: {String} name of the html, located under the folder 'bananas' and subfolder '{DAY}' where DAY is the previous parameter
 		* tags: {Array of String} (optional) tags of the banana
 
 

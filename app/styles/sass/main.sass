@@ -1,22 +1,155 @@
-$color: #c5371a
+///////// COMPASS
+@import compass/reset
+@import compass/css3
+@import compass/utilities
 
+//////// FONTS
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300,400italic,900,300italic)
+
+//////// RESETS
+*,*:before,*:after
+  box-sizing: border-box
+
+a
+  text-decoration: none
+  color: black
+  &:link,
+  &:visited
+    color: black
+button:focus,
+select:focus
+  outline: 0
+
+
+//////// STYLES
 body
-  background: #7bd1ff
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-  color: #333
+  font-family: 'Roboto', sans-serif
 
-.hero-unit
-  margin: 50px auto 0 auto
-  width: 300px
-  font-size: 18px
-  font-weight: 200
-  line-height: 30px
-  background-color: $color
-  border-radius: 6px
-  padding: 30px
+.tag
+  padding: .3em 1em
+  +border-radius(20px)
+  background: white
+  color: black
+  font-size: .7em
+  & + .tag
+    margin-left: .3em
 
-.hero-unit h1
-  font-size: 60px
-  line-height: 1
-  letter-spacing: -1px
+.one-banana
+  .info
+    width: 100%
+    background:  #40f272
+    height: 5em
+    padding-top: .3em
+    margin-bottom: 1em
+  .day,
+  .author
+    text-align: center
 
+  .day
+    font-weight: 300
+    font-size: 2.4em
+    margin: 0 auto .2em auto
+  .author
+    font-weight: 900
+    font-size: 1.3em
+    margin: .05em auto
+  .order
+    display: none
+  .tags
+    position: absolute
+    top: 1.8em
+    right: 5em
+
+
+.go-to-previous,
+.go-to-next,
+.go-to-all
+  position: fixed
+
+.go-to-previous,
+.go-to-next
+  top: 1.85em
+  a
+    background: black
+    color: white
+    font-size: 1em
+    opacity: .7
+    padding: .5em 1em
+    +border-radius(4px)
+  &:hover
+    +transition-duration(.3s)
+    a
+      color: white
+      opacity: 1
+
+.go-to-previous
+  left: -.5em
+  &:hover
+    left: -.10em
+    +transition-property(left)
+
+.go-to-next
+  right: -.5em
+  &:hover
+    right: -.10em
+    +transition-property(right)
+
+.go-to-all
+  top: -10px
+  right: 20%
+  a
+    background: black
+    color: white
+    font-size: 1em
+    padding: 1em 1em 0 1em
+    height: 1em
+    line-height: 2em
+  &:hover
+    top: 0
+    +transition-property(top)
+    +transition-duration(.3s)
+    a
+      color: rgba(237,115,221,.95)
+
+
+.filters
+  margin: 2em
+
+.filter
+  border: 1px solid black
+  padding: 1em .3em
+  line-height: 2em
+  margin-bottom: 2em
+  +border-radius(3px)
+
+.banana
+  display: inline-block
+  position: relative
+  width: 21%
+  opacity: .8
+  background: rgb(255,225,53)
+  +border-radius(3px)
+  padding: 1em
+  margin: 2%
+  color: black
+  &:hover
+    opacity: 1
+    +transition-property(opacity)
+    +transition-duration(.3s)
+  .tags
+    margin-top: 1em
+    pointer-events: none
+  .day
+    font-size: 2em
+    text-align: center
+    font-weight: 300
+  .author
+    font-size: 1em
+    text-align: center
+    font-weight: 900
+  .order
+    position: absolute
+    padding: .2em
+    top: 0
+    right: 0
