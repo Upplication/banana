@@ -1,0 +1,15 @@
+<div class="all-bananas">
+  <h1 class="title">Banana time!!!</h1>
+  <div class="filters">
+    <input ng-model="search.day" placeholder="Filter by day" class="filter by-day">
+    <input ng-model="search.author" placeholder="Filter by author" class="filter by-author">
+    <input ng-model="search.tags" placeholder="Filter by tag" class="filter by-tags">
+  </div>
+  <ul>
+    <li ng-repeat="banana in bananas | filter:search" class="banana"><a ng-href="#/banana/{{banana.day}}">
+        <h2 class="day">{{banana.day}}</h2>
+        <h3 class="author">{{banana.author}}</h3>
+        <div class="order">{{banana.order}}º</div>
+        <div ng-if="banana.tags" class="tags"><span ng-repeat="tag in banana.tags" class="tag">{{tag}}</span></div></a></li>
+  </ul>
+</div>
