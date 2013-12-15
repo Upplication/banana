@@ -1,22 +1,32 @@
 .one-banana(ng-if="banana", ng-class="{latest: banana.latest}")
 
   .info
-      h1.day {{banana.day}}
-      h2.author {{banana.author}}
+      h1.day {{banana.title}}
+      h2.author 
+        |{{banana.formated_date}} by 
+        a.account(href="http://www.twitter.com/{{banana.author}}", target="_blank") @{{banana.author}}
       .order
         |{{banana.order}}º
       .tags(ng-if="banana.tags")
           span.tag(ng-repeat="tag in banana.tags") {{tag}}
-  .go-to-all
-      a(href="#/all") all
 
   .go-to-previous(ng-if="banana.prev")
-      a(ng-href="#/banana/{{banana.prev}}") prev
+      a(ng-href="#/banana/{{banana.prev}}") < prev
 
   .go-to-next(ng-if="banana.next")
-      a(ng-href="#/banana/{{banana.next}}") next
+      a(ng-href="#/banana/{{banana.next}}") next >
 
-  .page(ng-include="banana.url")
+  .page(ng-include="banana.url", class='ng-repeat="tag in banana.tags"')
+
+  footer
+    ul
+      li 
+        a(ng-href="#history") Banana's History
+      li 
+        a(ng-href="#history") Our community
+      li
+        a(href="#/all") all
+    
 
 .banana-not-found(ng-if="!banana")
     span Banana not found!!!

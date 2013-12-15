@@ -3,17 +3,22 @@
 	"bananas": [
 		{
 			"day": 20131213,
-			"author": "@hhkaos",
+			"formated_date": "13th Dec 2013",
+			"author": "hhkaos",
 			"index": "banana.html",
+			"title": "Michael Jackson vs Banana Dance",
 			"tags":[
 				"youtube",
+				"video",
 				"famous"
 			]
 
 		},{
 			"day": 20131212,
-			"author": "@hhkaos",
+			"formated_date": "12th Dec 2013",
+			"author": "hhkaos",
 			"index": "banana.html",
+			"title": "All together... one more time!!",
 			"tags":[
 				"audio",
 				"animated",
@@ -22,71 +27,110 @@
 
 		},{
 			"day": 20131211,
-			"author": "borya09",
+			"formated_date": "11th Dec 2013",
+			"author": "hhkaos",
 			"index": "banana.html",
+			"title": "Banana man",
 			"tags":[
-				"tag1"
+				"youtube",
+				"video",
+				"song",
+				"animals"
 			]
 		},{
 			"day": 20131210,
-			"author": "borya09",
+			"formated_date": "10th Dec 2013",
+			"author": "hhkaos",
 			"index": "banana.html",
+			"title": "Gwen Stefani",
 			"tags":[
-				"tag1"
+				"youtube",
+				"video",
+				"famous",
+				"girl",
+				"song"
 			]
 		},{
 			"day": 20131209,
-			"author": "borya09",
+			"formated_date": "9th Dec 2013",
+			"author": "hhkaos",
 			"index": "banana.html",
+			"title": "Today... I woke up hungry!",
 			"tags":[
-				"tag2",
-				"tag1"
+				"cat",
+				"chinesse",
+				"girl",
+				"meme",
+				"gif"
 			]
 		},{
 			"day": 20131206,
-			"author": "@arnaix",
+			"formated_date": "6th Dec 2013",
+			"author": "arnaix",
 			"index": "banana.html",
+			"title": "Banana boooooomb!!",
 			"tags":[
 				"youtube",
+				"video",
 				"song"
 			]
 		},{
 			"day": 20131205,
-			"author": "@hhkaos",
+			"formated_date": "5th Dec 2013",
+			"author": "hhkaos",
 			"index": "banana.html",
+			"title": "Halloween Cute Banana Cat",
 			"tags":[
 				"youtube",
-				"song"
+				"video",
+				"song",
+				"animals",
+				"cat"
 			]
 		}
 		,{
 			"day": 20131204,
-			"author": "@hhkaos",
+			"formated_date": "4th Dec 2013",
+			"author": "hhkaos",
 			"index": "banana.html",
+			"title": "I'm a banana!!!",
 			"tags":[
 				"youtube",
-				"song"
+				"video",
+				"song",
+				"boy"
 			]
 		},{
 			"day": 20131203,
-			"author": "@hhkaos",
+			"formated_date": "3rd Dec 2013",
+			"author": "hhkaos",
 			"index": "banana.html",
+			"title": "That banana is mine!",
 			"tags":[
-				"meme"
+				"meme",
+				"gif",
+				"mokey",
+				"cartoons"
 			]
 		},{
 			"day": 20131202,
-			"author": "@hhkaos",
+			"formated_date": "2nd Dec 2013",
+			"author": "hhkaos",
 			"index": "banana.html",
+			"title": "U want a banana?? Mohaha!",
 			"tags":[
-				"meme"
+				"gif",
+				"chinesse"
 			]
 		},{
 			"day": 20131129,
-			"author": "@hhkaos",
+			"formated_date": "29th Nov 2013",
+			"author": "hhkaos",
 			"index": "banana.html",
+			"title": "Yeahh, llegó la hora de la banana!",
 			"tags":[
-				"meme"
+				"meme",
+				"girl"
 			]
 		}
 
