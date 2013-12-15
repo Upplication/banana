@@ -1,13 +1,22 @@
 <div ng-if="banana" ng-class="{latest: banana.latest}" class="one-banana">
   <div class="info">
-    <h1 class="day">{{banana.day}}</h1>
-    <h2 class="author">{{banana.author}}</h2>
+    <h1 class="day">{{banana.title}}</h1>
+    <h2 class="author">
+       
+      {{banana.formated_date}} by <a href="http://www.twitter.com/{{banana.author}}" target="_blank" class="account">@{{banana.author}}</a>
+    </h2>
     <div class="order">{{banana.order}}º</div>
     <div ng-if="banana.tags" class="tags"><span ng-repeat="tag in banana.tags" class="tag">{{tag}}</span></div>
   </div>
-  <div class="go-to-all"><a href="#/all">all</a></div>
-  <div ng-if="banana.prev" class="go-to-previous"><a ng-href="#/banana/{{banana.prev}}">prev</a></div>
-  <div ng-if="banana.next" class="go-to-next"><a ng-href="#/banana/{{banana.next}}">next</a></div>
-  <div ng-include="banana.url" class="page"></div>
+  <div ng-if="banana.prev" class="go-to-previous"><a ng-href="#/banana/{{banana.prev}}">&#60; prev</a></div>
+  <div ng-if="banana.next" class="go-to-next"><a ng-href="#/banana/{{banana.next}}">next &#62;</a></div>
+  <div ng-include="banana.url" class="page ng-repeat=&quot;tag in banana.tags&quot;"></div>
+  <footer>
+    <ul>
+      <li> <a ng-href="#history">Banana's History</a></li>
+      <li> <a ng-href="#history">Our community</a></li>
+      <li><a href="#/all">all</a></li>
+    </ul>
+  </footer>
 </div>
 <div ng-if="!banana" class="banana-not-found"><span>Banana not found!!!</span></div>
