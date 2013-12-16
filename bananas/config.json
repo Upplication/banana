@@ -2,6 +2,17 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20131216,
+			"formated_date": "16th Dec 2013",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Yeahh! it is the time!",
+			"tags":[
+				"community",
+				"meme"
+			]
+
+		},{
 			"day": 20131213,
 			"formated_date": "13th Dec 2013",
 			"author": "hhkaos",
