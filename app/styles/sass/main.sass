@@ -54,11 +54,7 @@ body
   font-size: 3em
   font-weight: 300
 
-//////// ONE-BANANA PAGE
-.one-banana
-  background-image: url(/images/jungle3.jpg)
-  position: relative
-  
+.info 
   header
     color: #ffe135
     float: none
@@ -81,6 +77,12 @@ body
       height: 70px
       float: left
       margin-right: 20px
+  
+
+//////// ONE-BANANA PAGE
+.one-banana
+  background-image: url(/images/jungle3.jpg)
+  position: relative
   
   .author,
   .tags
@@ -243,8 +245,7 @@ footer
     border-radius: 5px
 
   li
-    a
-      color: black
+    
     &:not(:first-child):before
       content: '|'
       padding-right: .5em
@@ -299,7 +300,8 @@ footer
 
   p
     margin-bottom: 1em
-  
+  .repository
+    float: left
   .go-to-previous
     text-align: right
 
@@ -464,9 +466,12 @@ ul.polaroids a
 .community
   background-image: url(/images/jungle4.jpg)
 
+  .info header span
+    margin-top: 10px
   h1
     line-height: 1.5em
-    margin: 30px
+  footer li a
+    color: white
   ul
     width: 800px
     margin: 0 auto
