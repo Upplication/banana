@@ -1,13 +1,17 @@
 .one-banana(ng-if="banana", ng-class="{latest: banana.latest}")
 
   .info
-      h1.day {{banana.title}}
-      h2.author 
-        |{{banana.formated_date}} by 
-        a.account(href="http://www.twitter.com/{{banana.author}}", target="_blank") @{{banana.author}}
+      header
+        h1.title 
+          img(src="images/banana_logo.png", id="logo")
+          span Banana's Time!
+        h2.author 
+          |{{banana.formated_date}} by 
+          a.account(href="http://www.twitter.com/{{banana.author}}", target="_blank") @{{banana.author}}
       .order
         |{{banana.order}}º
       .tags(ng-if="banana.tags")
+          |Tags: 
           span.tag(ng-repeat="tag in banana.tags") {{tag}}
 
   .go-to-previous(ng-if="banana.prev")
@@ -16,16 +20,30 @@
   .go-to-next(ng-if="banana.next")
       a(ng-href="#/banana/{{banana.next}}") next >
 
-  .page(ng-include="banana.url", class='ng-repeat="tag in banana.tags"')
+  .content
+    .centered
+      h2.title {{banana.title}}
+      .page(ng-include="banana.url", class='ng-repeat="tag in banana.tags"')
 
+      .share
+        span Do you like it? Make others laught!
+        
+        a(href="http://twitter.com/home?status={{banana.title}}", target="_blank")
+          img(src="/images/social/twitter.png")
+        a(href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://upplication.github.io/banana&p[images][0]=&p[title]={{banana.title}}&p[summary]=", target="_blank")
+          img(src="/images/social/facebook.png")
+        a(href="https://plus.google.com/share?url=http://upplication.github.io/banana", target="_blank")
+          img(src="/images/social/googleplus.png")
+        
   footer
     ul
-      li 
-        a(ng-href="#history") Banana's History
-      li 
-        a(ng-href="#history") Our community
       li
-        a(href="#/all") all
+        a(href="#/all") Banana's archive
+      li 
+        a(ng-href="#history") History
+      li 
+        a(ng-href="#community") Community
+      
     
 
 .banana-not-found(ng-if="!banana")

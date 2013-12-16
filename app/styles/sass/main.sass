@@ -13,21 +13,31 @@
 
 a
   text-decoration: none
-  color: black
+  color: white
   &:link,
   &:visited
-    color: black
+    color: white
 button:focus,
 select:focus
   outline: 0
 
 ////////// MIXINS
-
+.container
+  position: relative
+.container > div
+  background-size: 100% 100%
+  background-attachment: fixed
+  position: absolute
+  left: 0
+  right: 0
+  color: white
+  min-height: 768px
 
 //////// STYLES
 body
   font-family: 'Roboto', sans-serif
   line-height: 1.3em
+
 
 .tag
   padding: 0 1em
@@ -36,175 +46,178 @@ body
   +border-radius(20px)
   background: white
   color: black
-  font-size: .7em
+  //font-size: .7em
   & + .tag
     margin-left: .3em
 
+.title
+  font-size: 3em
+  font-weight: 300
 
 //////// ONE-BANANA PAGE
 .one-banana
-  .info
-    width: 100%
-    background:  #40f272
-    height: 5em
-    padding-top: .3em
-    //margin-bottom: 1em
-  .day,
-  .author
-    text-align: center
+  background-image: url(/images/jungle3.jpg)
+  position: relative
+  
+  header
+    color: #ffe135
+    float: none
+    margin: 0 20px
+    text-shadow: black 0px 1px 26px
+    background-color: rgba(255,255,255,.3)
+    display: inline-block
+    padding: 10px 30px
+    .title
+      font-size: 2em
+      font-weight: 800
+    
+    
 
-  .day
-    font-weight: 300
-    font-size: 1.7em
-    margin: .5em auto .3em
-  .author
-    font-style: italic
-    font-size: 1em
-    margin: .05em auto
+    span
+      display: inline-block
+      margin-top: 25px
+      float: left
+    #logo
+      height: 70px
+      float: left
+      margin-right: 20px
+  
+  .author,
+  .tags
+    position: fixed
+    bottom: 0
+    right: 0
+    margin: 20px
+
+  .tags
+    left: 0
+    right: auto
+    font-size: .8em
+
+  .go-to-previous,
+  .go-to-next
+    position: fixed
+    top: 50%
+    left: 0
+    padding-left: 1em
+    background-color: rgba(255, 225, 53, 0.5)
+    padding: .5em 1em
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px
+
+  
+  .go-to-next
+    right: 0
+    left: auto
+    padding-right: 1em
   .order
     display: none
-  .tags
-    position: absolute
-    top: 1.8em
-    right: 5em
-  &.latest
-    .tags
-      display: none
 
-.go-to-previous,
-.go-to-next,
-.go-to-all
-  position: fixed
-
-.go-to-previous,
-.go-to-next
-  top: 1.85em
-  a
-    background: black
-    color: white
-    font-size: 1em
-    opacity: .7
-    padding: 0.5em 1em .7em
-    +border-radius(4px)
-  &:hover
-    +transition-duration(.3s)
+  .share 
     a
-      color: white
-      opacity: 1
-
-.go-to-previous
-  left: -.5em
-  &:hover
-    left: -.10em
-    +transition-property(left)
-
-.go-to-next
-  right: -.5em
-  &:hover
-    right: -.10em
-    +transition-property(right)
-
-.go-to-all
-  top: -10px
-  right: 20%
-  a
-    background: black
-    color: white
-    font-size: 1em
-    padding: 1em 1em 0 1em
-    height: 1em
-    line-height: 2em
-  &:hover
-    top: 0
-    +transition-property(top)
-    +transition-duration(.3s)
-    a
-      color: rgba(237,115,221,.95)
+      display: inline-block
+      margin-right: 10px
+    span
+      font-size: .9em
+      display: block
+      margin-bottom: 10px
+    img
+      height: 20px
 
 
 //////// ALL-BANANAS PAGE
 .all-bananas
   background-image: url(/images/jungle.jpg)
-  background-size: 100% 100%
-  background-repeat: no-repeat
-  background-attachment: fixed
-  position: absolute
-  top: 0
-  bottom: 0
-  left: 0
-  right: 0
 
-.title
-  position: absolute
-  right: 1em
-  top: .5em
-  font-size: 3em
-  font-weight: 300
-  color: white
-
-.filters
-  margin: 2em
-
-.filter
-  border: 1px solid black
-  padding: 1em .8em
-  line-height: 2em
-  margin-bottom: 2em
-  +border-radius(3px)
-
-@-moz-keyframes loopOpacity
-  0%
-    opacity: .4
-  100%
-    opacity: 1
-@-webkit-keyframes loopOpacity
-  0%
-    opacity: .4
-  100%
-    opacity: 1
-
-.banana
-  display: inline-block
-  position: relative
-  width: 21%
-  opacity: .8
-  +border-radius(3px)
-  padding: 1em 0
-  margin: 2%
-  color: black
-  &:last-child
-    animation: loopOpacity 1.5s
-    -moz-animation: loopOpacity 1.5s infinite
-    -webkit-animation: loopOpacity 1.5s infinite
-
-  &:hover
-    opacity: 1
-    +transition-property(opacity)
-    +transition-duration(.3s)
-  a
-    display: block
-  .tags
-    margin-top: 1em
-    pointer-events: none
-  .day
-    font-size: 1.5em
-    margin-bottom: .5em
-    text-align: center
+  .title
+    margin: 1em
+    float: left
+    font-size: 3em
     font-weight: 300
-  .author
-    font-size: 1em
-    text-align: center
-    font-weight: 900
-  .order
-    position: absolute
-    padding: .2em
-    top: 0
-    right: 0
+    color: white
 
-.page
-  width: 80%
-  margin: 0 auto
+  .filters
+    margin: 2em
+    float: right
+
+  .filter
+    border: 1px solid black
+    padding: 1em .8em
+    line-height: 2em
+    margin-bottom: 2em
+    +border-radius(3px)
+
+  @-moz-keyframes loopOpacity
+    0%
+      opacity: .4
+    100%
+      opacity: 1
+  @-webkit-keyframes loopOpacity
+    0%
+      opacity: .4
+    100%
+      opacity: 1
+
+  .banana
+    display: inline-block
+    position: relative
+    width: 21%
+    opacity: .8
+    +border-radius(3px)
+    padding: 1em 0
+    margin: 2%
+    color: black
+    &:last-child
+      animation: loopOpacity 1.5s
+      -moz-animation: loopOpacity 1.5s infinite
+      -webkit-animation: loopOpacity 1.5s infinite
+
+    &:hover
+      opacity: 1
+      +transition-property(opacity)
+      +transition-duration(.3s)
+    a
+      display: block
+    .tags
+      margin-top: 1em
+      pointer-events: none
+    .day
+      font-size: 1.5em
+      margin-bottom: .5em
+      text-align: center
+      font-weight: 300
+    .author
+      font-size: 1em
+      text-align: center
+      font-weight: 900
+    .order
+      position: absolute
+      padding: .2em
+      top: 0
+      right: 0
+
+.content
+  display: block
   text-align: center
+  width: 100%
+  margin-top: 20px
+
+  .centered
+    color: black
+    display: inline-block
+    text-align: center
+    background: rgba(255,255,255,0.7)
+    border-radius: 15px
+    padding: 10px
+    margin-bottom: 70px
+    -webkit-transition: -webkit-transform .15s linear
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25)
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25)
+
+    .title
+      font-size: 2em
+      font-weight: 400
+      color: black
+      line-height: 1.5em
 
   img
     display: block
@@ -212,41 +225,84 @@ body
 
 footer
   position: fixed
-  bottom: 0
+  top: 0
   left: 0
   right: 0
-  background-color: #ccc
+  //background-color: #ccc
+
 
   ul,li
     margin: 0
     padding: 0
+  ul
+    float: right
+    margin: 1em
+    background-color: rgba(0, 0, 0, 0.6)
+    border-radius: 5px
+
   li
+    a
+      color: black
+    &:not(:first-child):before
+      content: '|'
+      padding-right: .5em
+
+    &:last-child
+      padding-right: .5em
     display: inline
+    padding-left: .5em
     &:firtst-child
       border-right: 1px solid black
     a
       line-height: 2em
-      width: 33%
+      //width: 33%
       display: inline-block
       text-align: center
 
+
+////////// HISTORY
 .history
-  
+  background-image: url(/images/jungle2.jpg)
+
   header
-    background-color: #40f272
+    
     .back-button
       background-color: #ccc
       display: inline-block
       padding: .4em
     .title
       position: static
-      display: inline-block
+      display: block
       font-size: 2em
-      margin: .9em 2em
+      margin-bottom: 20px
+  
   .content
-    margin: 1em
+    margin: 60px auto 20px
+    width: 500px
+    line-height: 1.5em
+    text-align: left
+    color: black
+    background: rgba(255,255,255,0.7)
+    border-radius: 15px
+    padding: 10px
+    margin-bottom: 70px
+    -webkit-transition: -webkit-transform .15s linear
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25)
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25)
+    
+    a
+      color: blue
+      text-decoration: underline
+  
 
+  p
+    margin-bottom: 1em
+  
+  .go-to-previous
+    text-align: right
 
+ul.polaroids
+  clear: both
 
 ul.polaroids a:after 
   content: attr(title)
@@ -254,6 +310,7 @@ ul.polaroids a:after
 
 /* By default, we tilt all our images -2 degrees */
 ul.polaroids a 
+  color: black
   -webkit-transform: rotate(-2deg)
   -moz-transform: rotate(-2deg)
   background: rgb(255,225,53)
@@ -317,4 +374,87 @@ ul.polaroids a
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5)
 
 
+@media (max-width: 768px) 
+
+  .one-banana
+  .info
+    width: 100%
+    background:  #40f272
+    height: 5em
+    padding-top: .3em
+    //margin-bottom: 1em
+  .day,
+  .author
+    text-align: center
+
+  .day
+    font-weight: 300
+    font-size: 1.7em
+    margin: .5em auto .3em
+  .author
+    font-style: italic
+    font-size: 1em
+    margin: .05em auto
+
+
+
+  .order
+    display: none
+  .tags
+    position: absolute
+    top: 1.8em
+    right: 5em
+    &.latest
+      .tags
+        display: none
+
+  .go-to-previous,
+  .go-to-next,
+  .go-to-all
+    position: fixed
+
+  .go-to-previous,
+  .go-to-next
+    top: 1.85em
+    a
+      background: black
+      color: white
+      font-size: 1em
+      opacity: .7
+      padding: 0.5em 1em .7em
+      +border-radius(4px)
+    &:hover
+      +transition-duration(.3s)
+      a
+        color: white
+        opacity: 1
+
+  .go-to-previous
+    left: -.5em
+    &:hover
+      left: -.10em
+      +transition-property(left)
+
+  .go-to-next
+    right: -.5em
+    &:hover
+      right: -.10em
+      +transition-property(right)
+
+  .go-to-all
+    top: -10px
+    right: 20%
+    a
+      background: black
+      color: white
+      font-size: 1em
+      padding: 1em 1em 0 1em
+      height: 1em
+      line-height: 2em
+    &:hover
+      top: 0
+      +transition-property(top)
+      +transition-duration(.3s)
+      a
+        color: rgba(237,115,221,.95)
     
