@@ -3,6 +3,9 @@
 angular.module('bananaUpp', ['ngRoute'])
   .config ['$routeProvider', ($routeProvider) ->
     $routeProvider
+      .when '/community',
+        templateUrl: 'views/community.html'
+        controller: 'CommunityCtrl'
       .when '/history',
         templateUrl: 'views/history.html'
         controller: 'HistoryCtrl'
