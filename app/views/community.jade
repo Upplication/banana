@@ -1,15 +1,33 @@
 .community
-	header
-		h1.title Our community
-		
+
+	.info
+      header
+        h1.title 
+          img(src="images/banana_logo.png", id="logo")
+          span Banana's Time!
+        h2.author 
+          |{{banana.formated_date}} by 
+          a.account(href="http://www.twitter.com/{{banana.author}}", target="_blank") @{{banana.author}}
+
 	.content
-		.go-to-previous
-			a(href="#/banana") Go back
-		h2 Whaaaaaaaat?
+		header
+			h1.title Join to the banana's community
+
+		
 		ul
 			li
-				|hhkaos
-				a(href="#/banana") Go back
-
-		.go-to-previous
-			a(href="#/banana") Go back
+				img(src="http://upplication.com/wp-content/uploads/2013/05/borja1.png")
+			li
+				img(src="http://upplication.com/wp-content/uploads/2013/11/raul-team-02.png")
+			li
+				img(src="http://upplication.com/wp-content/uploads/2013/05/irene1.png")
+			li
+				img(src="http://upplication.com/wp-content/uploads/2013/05/javier1.png")
+	footer
+	    ul
+	      li
+	        a(href="#/all") Banana's archive
+	      li 
+	        a(ng-href="#history") History
+	      li 
+	        a(ng-href="#community") Community

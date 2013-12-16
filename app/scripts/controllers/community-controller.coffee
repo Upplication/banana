@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('bananaUpp')
-  .controller 'HistoryCtrl', ['$scope','BananasService', '$routeParams', ($scope, bananasService, $routeParams) ->
-
+  .controller 'CommunityCtrl', ['$scope','BananasService', '$routeParams', ($scope, bananasService, $routeParams) ->
+  ]
 
     
