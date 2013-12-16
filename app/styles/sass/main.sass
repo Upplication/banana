@@ -8,7 +8,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300,400italic,900,300italic)
 
 //////// RESETS
-*,*:before,*:after
+*, *:before, *:after
   box-sizing: border-box
 
 a
@@ -17,6 +17,7 @@ a
   &:link,
   &:visited
     color: white
+
 button:focus,
 select:focus
   outline: 0
@@ -24,6 +25,7 @@ select:focus
 ////////// MIXINS
 .container
   position: relative
+
 .container > div
   background-size: 100% 100%
   background-attachment: fixed
@@ -37,7 +39,6 @@ select:focus
 body
   font-family: 'Roboto', sans-serif
   line-height: 1.3em
-
 
 .tag
   padding: 0 1em
@@ -54,20 +55,18 @@ body
   font-size: 3em
   font-weight: 300
 
-.info 
+.info
   header
     color: #ffe135
     float: none
     margin: 0 20px
     text-shadow: black 0px 1px 26px
-    background-color: rgba(255,255,255,.3)
+    background-color: rgba(255, 255, 255, .3)
     display: inline-block
     padding: 10px 30px
     .title
       font-size: 2em
       font-weight: 800
-    
-    
 
     span
       display: inline-block
@@ -77,13 +76,11 @@ body
       height: 70px
       float: left
       margin-right: 20px
-  
 
 //////// ONE-BANANA PAGE
 .one-banana
-  background-image: url(/images/jungle3.jpg)
-  position: relative
-  
+  background: url('../images/jungle3.jpg')
+
   .author,
   .tags
     position: fixed
@@ -106,7 +103,6 @@ body
     padding: .5em 1em
     text-shadow: rgb(0, 0, 0) 1px 1px 1px
 
-  
   .go-to-next
     right: 0
     left: auto
@@ -114,7 +110,7 @@ body
   .order
     display: none
 
-  .share 
+  .share
     a
       display: inline-block
       margin-right: 10px
@@ -125,10 +121,21 @@ body
     img
       height: 20px
 
-
 //////// ALL-BANANAS PAGE
+@-moz-keyframes loopOpacity
+  0%
+    opacity: .4
+  100%
+    opacity: 1
+
+@-webkit-keyframes loopOpacity
+  0%
+    opacity: .4
+  100%
+    opacity: 1
+
 .all-bananas
-  background-image: url(/images/jungle.jpg)
+  background-image: url('../images/jungle.jpg')
 
   .title
     margin: 1em
@@ -147,17 +154,6 @@ body
     line-height: 2em
     margin-bottom: 2em
     +border-radius(3px)
-
-  @-moz-keyframes loopOpacity
-    0%
-      opacity: .4
-    100%
-      opacity: 1
-  @-webkit-keyframes loopOpacity
-    0%
-      opacity: .4
-    100%
-      opacity: 1
 
   .banana
     display: inline-block
@@ -207,14 +203,14 @@ body
     color: black
     display: inline-block
     text-align: center
-    background: rgba(255,255,255,0.7)
+    background: rgba(255, 255, 255, 0.7)
     border-radius: 15px
     padding: 10px
     margin-bottom: 70px
     max-width: 580px
     -webkit-transition: -webkit-transform .15s linear
-    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25)
-    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25)
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25)
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .25)
 
     .title
       font-size: 2em
@@ -233,9 +229,7 @@ footer
   left: 0
   right: 0
   //background-color: #ccc
-
-
-  ul,li
+  ul, li
     margin: 0
     padding: 0
   ul
@@ -245,7 +239,7 @@ footer
     border-radius: 5px
 
   li
-    
+
     &:not(:first-child):before
       content: '|'
       padding-right: .5em
@@ -262,13 +256,12 @@ footer
       display: inline-block
       text-align: center
 
-
 ////////// HISTORY
 .history
-  background-image: url(/images/jungle2.jpg)
+  background-image: url('../images/jungle2.jpg')
 
   header
-    
+
     .back-button
       background-color: #ccc
       display: inline-block
@@ -278,25 +271,24 @@ footer
       display: block
       font-size: 2em
       margin-bottom: 20px
-  
+
   .content
     margin: 60px auto 20px
     width: 500px
     line-height: 1.5em
     text-align: left
     color: black
-    background: rgba(255,255,255,0.7)
+    background: rgba(255, 255, 255, 0.7)
     border-radius: 15px
     padding: 10px
     margin-bottom: 70px
     -webkit-transition: -webkit-transform .15s linear
-    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25)
-    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25)
-    
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25)
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .25)
+
     a
       color: blue
       text-decoration: underline
-  
 
   p
     margin-bottom: 1em
@@ -308,85 +300,75 @@ footer
 ul.polaroids
   clear: both
 
-ul.polaroids a:after 
+ul.polaroids a:after
   content: attr(title)
 
-
 /* By default, we tilt all our images -2 degrees */
-ul.polaroids a 
+ul.polaroids a
   color: black
   -webkit-transform: rotate(-2deg)
   -moz-transform: rotate(-2deg)
-  background: rgb(255,225,53)
+  background: rgb(255, 225, 53)
   padding: 2em 1em
 
- 
 /* Rotate all even images 2 degrees */
-ul.polaroids li:nth-child(even) a 
+ul.polaroids li:nth-child(even) a
   -webkit-transform: rotate(2deg)
   -moz-transform: rotate(2deg)
 
- 
 /* Don't rotate every third image, but offset its position */
-ul.polaroids li:nth-child(3n) a 
+ul.polaroids li:nth-child(3n) a
   -webkit-transform: none
   -moz-transform: none
   position: relative
   top: -5px
 
- 
 /* Rotate every fifth image by 5 degrees and offset it */
-ul.polaroids li:nth-child(5n) a 
+ul.polaroids li:nth-child(5n) a
   -webkit-transform: rotate(5deg)
   -moz-transform: rotate(5deg)
   position: relative
   right: 5px
 
- 
 /* Keep default rotate for every eighth, but offset it */
-ul.polaroids li:nth-child(8n) a 
+ul.polaroids li:nth-child(8n) a
   position: relative
   top: 8px
   right: 5px
 
- 
 /* Keep default rotate for every eleventh, but offset it */
-ul.polaroids li:nth-child(11n) a 
+ul.polaroids li:nth-child(11n) a
   position: relative
   top: 3px
   left: -5px
 
-
 /* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
-ul.polaroids a:hover 
+ul.polaroids a:hover
   -webkit-transform: scale(1.25) !important
   -moz-transform: scale(1.25) !important
   position: relative !important
   z-index: 5 !important
 
-
 /* Add drop shadows and smooth out the transition (Safari only) */
-ul.polaroids a 
+ul.polaroids a
   -webkit-transition: -webkit-transform .15s linear
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25)
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25)
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25)
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .25)
 
- 
 /* On hover, darken the shadows a bit */
-ul.polaroids a 
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5)
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5)
+ul.polaroids a
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .5)
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .5)
 
+@media (max-width: 768px)
 
-@media (max-width: 768px) 
-
-  .one-banana
+  //.one-banana
   .info
     width: 100%
-    background:  #40f272
+    background: #40f272
     height: 5em
     padding-top: .3em
-    //margin-bottom: 1em
+  //margin-bottom: 1em
   .day,
   .author
     text-align: center
@@ -399,8 +381,6 @@ ul.polaroids a
     font-style: italic
     font-size: 1em
     margin: .05em auto
-
-
 
   .order
     display: none
@@ -460,11 +440,11 @@ ul.polaroids a
       +transition-property(top)
       +transition-duration(.3s)
       a
-        color: rgba(237,115,221,.95)
+        color: rgba(237, 115, 221, .95)
 
 //////// ALL-BANANAS PAGE
 .community
-  background-image: url(/images/jungle4.jpg)
+  background-image: url('../images/jungle4.jpg')
 
   .info header span
     margin-top: 10px
@@ -475,7 +455,7 @@ ul.polaroids a
   ul
     width: 800px
     margin: 0 auto
-    
+
     li
       display: inline-block
       margin-right: 30px

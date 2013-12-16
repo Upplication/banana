@@ -285,17 +285,9 @@ module.exports = function (grunt) {
 							'*.{ico,png,txt}',
 							'.htaccess',
 							'bower_components/**/*',
-							'images/{,*/}*.{gif,webp}',
+							'images/{,*/}*.{jpg,gif,png,webp}',
 							'styles/fonts/*',
 							'bananas/**'
-						]
-					},
-					{
-						expand: true,
-						cwd: '.tmp/images',
-						dest: '<%= yeoman.dist %>/images',
-						src: [
-							'generated/*'
 						]
 					}
 				]
@@ -329,7 +321,7 @@ module.exports = function (grunt) {
 			dist: [
 				'coffee',
 				'copy:styles',
-				'imagemin',
+				/*'imagemin',*/
 				'svgmin',
 				'htmlmin',
 				'compass'
