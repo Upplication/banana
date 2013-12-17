@@ -18,6 +18,8 @@ html.no-js
     // build:css(.tmp) styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
+    script(type='text/javascript').
+        document.write('<base href="' + document.location + '" />');
   body(ng-app='bananaUpp')
     //if lt IE 7
       p.browsehappy
