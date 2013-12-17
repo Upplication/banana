@@ -2,6 +2,18 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20131217,
+			"formated_date": "17th Dec 2013",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Yiiiiihaaa! cowboy!",
+			"tags":[
+				"gif",
+				"animation"
+			]
+
+		},
+		{
 			"day": 20131216,
 			"formated_date": "16th Dec 2013",
 			"author": "hhkaos",
