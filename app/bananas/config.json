@@ -2,6 +2,19 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20131219,
+			"formated_date": "19th Dec 2013",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "BananaNana! BananaNana! BananaNana Nanana Nanana...",
+			"tags":[
+				"gif",
+				"animation"
+				
+			]
+
+		},
+		{
 			"day": 20131218,
 			"formated_date": "18th Dec 2013",
 			"author": "hhkaos",
