@@ -2,6 +2,19 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20131220,
+			"formated_date": "20th Dec 2013",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Banane! ñam Ñam ñam Ñam!!",
+			"tags":[
+				"gif",
+				"animation",
+				"famous"
+				
+			]
+
+		},{
 			"day": 20131219,
 			"formated_date": "19th Dec 2013",
 			"author": "hhkaos",
