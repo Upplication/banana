@@ -2,6 +2,19 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140102,
+			"formated_date": "2nd Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "But... WTF!!",
+			"tags":[
+				"gif",
+				"animation",
+				"fruit"
+				
+			]
+
+		},{
 			"day": 20131220,
 			"formated_date": "20th Dec 2013",
 			"author": "hhkaos",
