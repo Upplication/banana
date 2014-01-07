@@ -2,6 +2,19 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140107,
+			"formated_date": "7th Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Miaaaaaaow",
+			"tags":[
+				"gif",
+				"animation",
+				"animals"
+				
+			]
+
+		},{
 			"day": 20140103,
 			"formated_date": "3rd Jan 2014",
 			"author": "hhkaos",
