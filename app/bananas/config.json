@@ -2,6 +2,19 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140109,
+			"formated_date": "9th Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Banana hat!",
+			"tags":[
+				"gif",
+				"animation",
+				"movie"
+				
+			]
+
+		},{
 			"day": 20140107,
 			"formated_date": "7th Jan 2014",
 			"author": "hhkaos",
