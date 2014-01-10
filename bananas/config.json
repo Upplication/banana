@@ -2,6 +2,18 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140110,
+			"formated_date": "10th Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "I'll take it!",
+			"tags":[
+				"gif",
+				"animation"
+				
+			]
+
+		},{
 			"day": 20140109,
 			"formated_date": "9th Jan 2014",
 			"author": "hhkaos",
