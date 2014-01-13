@@ -2,6 +2,18 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140113,
+			"formated_date": "13th Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Oh my good...",
+			"tags":[
+				"gif",
+				"animation"
+				
+			]
+
+		},{
 			"day": 20140110,
 			"formated_date": "10th Jan 2014",
 			"author": "hhkaos",
