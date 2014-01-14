@@ -2,6 +2,16 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140114,
+			"formated_date": "14th Jan 2014",
+			"author": "borya09",
+			"index": "banana.html",
+			"title": "These carnivals...",
+			"tags":[
+				"fancy dress"
+			]
+
+		},{
 			"day": 20140113,
 			"formated_date": "13th Jan 2014",
 			"author": "hhkaos",
@@ -10,7 +20,7 @@
 			"tags":[
 				"gif",
 				"animation"
-				
+
 			]
 
 		},{
