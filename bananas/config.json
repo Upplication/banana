@@ -2,6 +2,18 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140115,
+			"formated_date": "15th Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "I'm back! hahahaha",
+			"tags":[
+				"japanese",
+				"video",
+				"youtube"
+			]
+
+		},{
 			"day": 20140114,
 			"formated_date": "14th Jan 2014",
 			"author": "borya09",
