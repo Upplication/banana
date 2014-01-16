@@ -1,5 +1,5 @@
 /**
- * @license AngularJS v1.2.4
+ * @license AngularJS v1.2.8-build.2087+sha.affcbad
  * (c) 2010-2014 Google, Inc. http://angularjs.org
  * License: MIT
  */
@@ -1094,7 +1094,8 @@ function createHttpBackendMock($rootScope, $delegate, $browser) {
   var definitions = [],
       expectations = [],
       responses = [],
-      responsesPush = angular.bind(responses, responses.push);
+      responsesPush = angular.bind(responses, responses.push),
+      copy = angular.copy;
 
   function createResponse(status, data, headers) {
     if (angular.isFunction(status)) return status;
@@ -1126,7 +1127,7 @@ function createHttpBackendMock($rootScope, $delegate, $browser) {
       function handleResponse() {
         var response = wrapped.response(method, url, data, headers);
         xhr.$$respHeaders = response[2];
-        callback(response[0], response[1], xhr.getAllResponseHeaders());
+        callback(copy(response[0]), copy(response[1]), xhr.getAllResponseHeaders());
       }
 
       function handleTimeout() {
@@ -1576,6 +1577,10 @@ function MockHttpExpectation(method, url, data, headers) {
   this.toString = function() {
     return method + ' ' + url;
   };
+}
+
+function createMockXhr() {
+  return new MockXhr();
 }
 
 function MockXhr() {
@@ -2081,6 +2086,20 @@ if(window.jasmine || window.mocha) {
    *
    * @param {...Function} fns any number of functions which will be injected using the injector.
    */
+
+
+
+  var ErrorAddingDeclarationLocationStack = function(e, errorForStack) {
+    this.message = e.message;
+    this.name = e.name;
+    if (e.line) this.line = e.line;
+    if (e.sourceId) this.sourceId = e.sourceId;
+    if (e.stack && errorForStack)
+      this.stack = e.stack + '\n' + errorForStack.stack;
+    if (e.stackArray) this.stackArray = e.stackArray;
+  };
+  ErrorAddingDeclarationLocationStack.prototype.toString = Error.prototype.toString;
+
   window.inject = angular.mock.inject = function() {
     var blockFns = Array.prototype.slice.call(arguments, 0);
     var errorForStack = new Error('Declaration Location');
@@ -2101,7 +2120,9 @@ if(window.jasmine || window.mocha) {
           injector.invoke(blockFns[i] || angular.noop, this);
           /* jshint +W040 */
         } catch (e) {
-          if(e.stack && errorForStack) e.stack +=  '\n' + errorForStack.stack;
+          if (e.stack && errorForStack) {
+            throw new ErrorAddingDeclarationLocationStack(e, errorForStack);
+          }
           throw e;
         } finally {
           errorForStack = null;

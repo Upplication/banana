@@ -2,6 +2,17 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140116,
+			"formated_date": "16th Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Warriorssss!",
+			"tags":[
+				"gif",
+				"film"
+			]
+
+		},{
 			"day": 20140115,
 			"formated_date": "15th Jan 2014",
 			"author": "hhkaos",
