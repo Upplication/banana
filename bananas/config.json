@@ -2,6 +2,18 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140117,
+			"formated_date": "17th Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "I'm WEIIRRDDD!",
+			"tags":[
+				"guy",
+				"people",
+				"gif"
+			]
+
+		},{
 			"day": 20140116,
 			"formated_date": "16th Jan 2014",
 			"author": "hhkaos",
