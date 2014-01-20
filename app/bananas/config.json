@@ -2,6 +2,18 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140120,
+			"formated_date": "20th Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "LoLLLL!",
+			"tags":[
+				"guy",
+				"people",
+				"gif"
+			]
+
+		},{
 			"day": 20140117,
 			"formated_date": "17th Jan 2014",
 			"author": "hhkaos",
