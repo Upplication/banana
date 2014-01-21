@@ -1,0 +1,144 @@
+<style type="text/css">
+
+
+    @-webkit-keyframes banana {
+        0%   {
+            opacity: .4;
+            top: 0;
+            right: 200px;
+        }
+        20%   {
+            top: auto;
+            opacity: .8;
+            bottom: 120px;
+            left: 100px;
+        }
+        40%   {
+            top: 400px;
+            opacity: .4;
+            bottom: auto;
+            left: 170px;
+        }
+        60%   {
+            top: auto;
+            opacity: 1;
+            bottom: 0;
+            left: auto;
+            right: 40px;
+        }
+        80%   {
+            top: 300px;
+            opacity: .5;
+            bottom: auto;
+            left: 300px;
+        }
+    }
+
+    @-moz-keyframes banana {
+        0%   {
+            opacity: .4;
+            top: 0;
+            right: 200px;
+        }
+        20%   {
+            top: auto;
+            opacity: .8;
+            bottom: 120px;
+            left: 100px;
+        }
+        40%   {
+            top: 400px;
+            opacity: .4;
+            bottom: auto;
+            left: 170px;
+        }
+        60%   {
+            top: auto;
+            opacity: 1;
+            bottom: 0;
+            left: auto;
+            right: 40px;
+        }
+        80%   {
+            top: 300px;
+            opacity: .5;
+            bottom: auto;
+            left: 300px;
+        }
+    }
+
+    @keyframes banana {
+        0%   {
+            opacity: .4;
+            top: 0;
+            right: 200px;
+        }
+        20%   {
+            top: auto;
+            opacity: .8;
+            bottom: 120px;
+            left: 100px;
+        }
+        40%   {
+            top: 400px;
+            opacity: .4;
+            bottom: auto;
+            left: 170px;
+        }
+        60%   {
+            top: auto;
+            opacity: 1;
+            bottom: 0;
+            left: auto;
+            right: 40px;
+        }
+        80%   {
+            top: 300px;
+            opacity: .5;
+            bottom: auto;
+            left: 300px;
+        }
+    }
+
+    #wrapper {
+        width: 800px;
+        height: 500px;
+        position: relative;
+    }
+
+    #image {
+        position: absolute;
+        top: 10px;
+        bottom: 50px;
+        left: 170px;
+        animation: banana 4s infinite;
+        -webkit-animation: banana 4s infinite;
+        -moz-animation: banana 4s infinite;
+    }
+
+
+    #hidden {
+       display: none;
+    }
+</style>
+
+
+<div id="wrapper">
+    <img id="image"
+         src='http://rack.3.mshcdn.com/media/ZgkyMDEyLzEwLzE5LzExXzMzXzMzXzE3Nl9maWxlCnAJdGh1bWIJMTIwMHg5NjAwPg/462b8072'
+         style='height:50px'>
+    <img id="hidden"
+         src='http://i288.photobucket.com/albums/ll191/Starlight_1971/cat-in-banana.gif'>
+</div>
+
+<script type="text/javascript">
+    (function($){
+       var $gif = $('#image'),
+               $hiddenGif = $('#hidden');
+        $gif.on('click', function(){
+            alert('yeah!');
+            $gif.hide();
+            $hiddenGif.show();
+        })
+    })($);
+</script>

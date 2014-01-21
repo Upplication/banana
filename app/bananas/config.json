@@ -2,6 +2,18 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140121,
+			"formated_date": "21th Jan 2014",
+			"author": "borya09",
+			"index": "banana.html",
+			"title": "Try to click me!",
+			"tags":[
+				"guy",
+				"people",
+				"gif"
+			]
+
+		},{
 			"day": 20140120,
 			"formated_date": "20th Jan 2014",
 			"author": "hhkaos",
