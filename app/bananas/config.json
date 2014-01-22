@@ -2,6 +2,18 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140122,
+			"formated_date": "22th Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Run! banana, RUN!!!",
+			"tags":[
+				"gif",
+				"banana",
+				"baboon"
+			]
+
+		},{
 			"day": 20140121,
 			"formated_date": "21th Jan 2014",
 			"author": "borya09",
