@@ -2,8 +2,22 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140123,
+			"formated_date": "23rd Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Ey bro! How are you doing?",
+			"tags":[
+				"youtube",
+				"banana",
+				"video",
+				"people",
+				"custom"
+			]
+
+		},{
 			"day": 20140122,
-			"formated_date": "22th Jan 2014",
+			"formated_date": "22nd Jan 2014",
 			"author": "hhkaos",
 			"index": "banana.html",
 			"title": "Run! banana, RUN!!!",
@@ -15,7 +29,7 @@
 
 		},{
 			"day": 20140121,
-			"formated_date": "21th Jan 2014",
+			"formated_date": "21st Jan 2014",
 			"author": "borya09",
 			"index": "banana.html",
 			"title": "Try to click me!",
