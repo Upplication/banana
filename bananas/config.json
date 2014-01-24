@@ -2,6 +2,18 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140124,
+			"formated_date": "24th Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "C'mon! Catch it!",
+			"tags":[
+				"animal",
+				"guy",
+				"dog"
+			]
+
+		},{
 			"day": 20140123,
 			"formated_date": "23rd Jan 2014",
 			"author": "hhkaos",
