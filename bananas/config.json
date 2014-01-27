@@ -2,6 +2,17 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140127,
+			"formated_date": "27th Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Bananas in a parallel universe",
+			"tags":[
+				"picture",
+				"comic"
+			]
+
+		},{
 			"day": 20140124,
 			"formated_date": "24th Jan 2014",
 			"author": "hhkaos",
