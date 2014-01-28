@@ -2,14 +2,15 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
-			"day": 20140127,
+			"day": 20140128,
 			"formated_date": "27th Jan 2014",
 			"author": "hhkaos",
 			"index": "banana.html",
-			"title": "Bananas in a parallel universe",
+			"title": "Luke...I'm your father...",
 			"tags":[
-				"picture",
-				"comic"
+				"film",
+				"art",
+				"famous"
 			]
 
 		},{
