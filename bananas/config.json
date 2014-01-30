@@ -2,6 +2,17 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140130,
+			"formated_date": "30th Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Hello, how can I help you?",
+			"tags":[
+				"jpg"
+				
+			]
+
+		},{
 			"day": 20140129,
 			"formated_date": "29th Jan 2014",
 			"author": "hhkaos",
