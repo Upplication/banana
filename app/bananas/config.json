@@ -2,6 +2,20 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140131,
+			"formated_date": "31st Jan 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Nimions!!",
+			"tags":[
+				"video",
+				"youtube",
+				"song"
+				
+			]
+
+		},
+		{
 			"day": 20140130,
 			"formated_date": "30th Jan 2014",
 			"author": "hhkaos",
