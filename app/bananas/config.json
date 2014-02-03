@@ -2,6 +2,19 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140203,
+			"formated_date": "3rd Feb 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Leave me alooonnnneee!!",
+			"tags":[
+				"banana art",
+				"jpeg"
+				
+			]
+
+		},
+		{
 			"day": 20140131,
 			"formated_date": "31st Jan 2014",
 			"author": "hhkaos",
