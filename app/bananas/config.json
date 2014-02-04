@@ -2,6 +2,18 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140204,
+			"formated_date": "4th Feb 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Banana is not enough.. xD",
+			"tags":[
+				"picture",
+				"jpeg"
+				
+			]
+
+		},{
 			"day": 20140203,
 			"formated_date": "3rd Feb 2014",
 			"author": "hhkaos",
