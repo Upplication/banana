@@ -2,6 +2,20 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140205,
+			"formated_date": "5th Feb 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "I have no shame at all xD",
+			"tags":[
+				"picture",
+				"jpeg",
+				"car"
+				
+			]
+
+		},
+		{
 			"day": 20140204,
 			"formated_date": "4th Feb 2014",
 			"author": "hhkaos",
