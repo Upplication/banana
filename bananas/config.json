@@ -2,6 +2,17 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140206,
+			"formated_date": "6th Feb 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "It happened to you too?",
+			"tags":[
+				"meme"
+				
+			]
+
+		},{
 			"day": 20140205,
 			"formated_date": "5th Feb 2014",
 			"author": "hhkaos",
