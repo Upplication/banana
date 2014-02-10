@@ -9,7 +9,17 @@
 			"title": "Moahahaha!",
 			"tags":[
 				"picture"
-				
+			]
+		},{		
+			"day": 20140207,
+			"formated_date": "7th Feb 2014",
+			"author": "borya09",
+			"index": "banana.html",
+			"title": "gru-nt banana",
+			"tags":[
+				"meme",
+                "js",
+                "grunt"
 			]
 
 		},{
@@ -20,7 +30,7 @@
 			"title": "It happened to you too?",
 			"tags":[
 				"meme"
-				
+
 			]
 
 		},{
