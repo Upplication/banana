@@ -2,6 +2,17 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140210,
+			"formated_date": "10th Feb 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "Moahahaha!",
+			"tags":[
+				"picture"
+				
+			]
+
+		},{
 			"day": 20140206,
 			"formated_date": "6th Feb 2014",
 			"author": "hhkaos",
