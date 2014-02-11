@@ -2,6 +2,16 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140211,
+			"formated_date": "11th Feb 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "I'm the f*cking master of the universe!",
+			"tags":[
+				"art",
+				"picture"
+			]
+		},{
 			"day": 20140210,
 			"formated_date": "10th Feb 2014",
 			"author": "hhkaos",
