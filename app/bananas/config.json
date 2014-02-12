@@ -2,6 +2,16 @@
 	"version": "0.0.1",
 	"bananas": [
 		{
+			"day": 20140212,
+			"formated_date": "12th Feb 2014",
+			"author": "hhkaos",
+			"index": "banana.html",
+			"title": "I know you want me... I know I need you...",
+			"tags":[
+				"youtube",
+				"video"
+			]
+		},{
 			"day": 20140211,
 			"formated_date": "11th Feb 2014",
 			"author": "hhkaos",
