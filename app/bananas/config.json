@@ -1,6 +1,16 @@
 {
 	"version": "0.0.1",
 	"bananas": [
+        {
+            "day": 20140213,
+            "formated_date": "13th Feb 2014",
+            "author": "borya09",
+            "index": "banana.html",
+            "title": "It's my final bananaaaa...tiririri tiririri",
+            "tags":[
+                "gif"
+            ]
+        },
 		{
 			"day": 20140212,
 			"formated_date": "12th Feb 2014",
