@@ -2,6 +2,26 @@
 	"version": "0.0.1",
 	"bananas": [
         {
+            "day": 20140321,
+            "formated_date": "21st Mar 2014",
+            "author": "feverjb",
+            "index": "banana.html",
+            "title": "Weird boy xD",
+            "tags":[
+                "gif"
+            ]
+        },
+        {
+            "day": 20140228,
+            "formated_date": "28th Feb 2028",
+            "author": "marimar",
+            "index": "banana.html",
+            "title": "Punch!",
+            "tags":[
+                "image"
+            ]
+        },
+        {
             "day": 20140213,
             "formated_date": "13th Feb 2014",
             "author": "borya09",
